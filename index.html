@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;scroll-padding-top: 4rem;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        *{
+            transition: all .4s linear;
+            scroll-behavior: smooth;
+        }
+        .aLink.active{
+            color: teal;
+        }
+    </style>
+</head>
+<body class="">
+
+    <!-- header section -->
+    <div class="flex fixed w-full top-0 left-0 shadow h-14 bg-white">
+        <header class="w-11/12 md:w-4/5 flex items-center mx-auto">
+            <h1 class="text-xl">Dental<span class="text-teal-400">Care.</span></h1>
+            <nav class="hidden md:block ml-auto">
+                <a class="active aLink mx-3 hover:text-teal-400" href="#home">Home</a>
+                <a class="aLink mx-3 hover:text-teal-400" href="#about">About</a>
+                <a class="aLink mx-3 hover:text-teal-400" href="#services">Services</a>
+                <a class="aLink mx-3 hover:text-teal-400" href="#reviews">Reviews</a>
+                <a class="aLink mx-3 hover:text-teal-400" href="#contact">Contact</a>
+            </nav>
+            <button class="hidden md:block ml-auto py-1 px-2 md:py-2 md:px-3 bg-teal-400 text-white rounded"><a href="#appointment">Make Appointment</a></button>
+            <div class="cursor-pointer block md:hidden ml-auto openNav">
+                <i class="fas fa-bars text-xl"></i>
+            </div>
+        </header>
+    </div>
+
+    <div class="navSide hidden w-full h-screen fixed top-0 right-0 bg-teal-900 text-white text-center">
+        <nav class="pt-24 pb-14">
+            <a class="active aLink my-5 block hover:text-teal-400" href="#home">Home</a>
+            <a class="aLink my-5 block hover:text-teal-400" href="#about">About</a>
+            <a class="aLink my-5 block hover:text-teal-400" href="#services">Services</a>
+            <a class="aLink my-5 block hover:text-teal-400" href="#reviews">Reviews</a>
+            <a class="aLink my-5 block hover:text-teal-400" href="#contact">Contact</a>
+        </nav>
+        <button class="w-10 h-10 bg-teal-400 text-white rounded-full closeNav"><i class="fas fa-times"></i></button>
+    </div>
+
+    <!-- home section -->
+    <section id="home" class="flex items-center justify-center w-full h-screen mt-14" style="background-image: url(./images/home-bg.jpg);background-position: center;background-size: cover;">
+        <div class="mx-auto w-11/12 md:w-4/5">
+            <h1 class="text-3xl md:text-5xl font-semibold tracking-wide">LET US BRIGHTEN <br> YOUR SMILE</h1>
+            <p class="my-4 w-1/2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis enim vitae itaque dolorum! Nostrum labore eum, culpa deleniti!</p>
+            <button class="ml-auto py-2 px-3 bg-teal-400 text-white rounded"><a href="#appointment">Make Appointment</a></button>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section class="my-16 flex" id="about">
+        <div class="mx-auto w-11/12 md:w-4/5">
+            <div class="grid gap-3 grid-cols-1 md:grid-cols-2">
+                <div class="">
+                    <img src="./images/about-img.jpg" class="w-full md:w-11/12" alt="">
+                </div>
+                <div class="flex flex-col items-center">
+                    <div>
+                        <h1 class="text-teal-400 mt-2">About Us</h1>
+                        <h1 class="text-2xl font-semibold">True Healthcare For Your Family</h1>
+                        <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut a sunt, eligendi iste nam dicta tenetur illo ad animi aspernatur nisi exercitationem totam quos odio! Deserunt dolorem perferendis sequi aliquid?</p>
+                        <button class="ml-auto py-1 px-2 md:py-2 md:px-3 bg-teal-400 text-white rounded"><a href="#appointment">Make Appointment</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- services section -->
+    <section class="my-16 flex w-full" id="services">
+        <div class="mx-auto w-11/12 md:w-4/5">
+            <h1 class="text-center text-2xl font-semibold">OUR SERVICES</h1>
+            <div class="grid gap-8 grid-cols-1 grid-rows-1 md:grid-cols-3 md:grid-rows-2 text-center mt-12">
+                <div class="flex flex-col items-center justify-center shadow p-5">
+                    <img src="./images/icon-1.svg" alt="">
+                    <h1 class="my-2 font-semibold">Alignment Specialist</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit unde nulla dolores?</p>
+                </div>
+                <div class="flex flex-col items-center justify-center shadow p-5">
+                    <img src="./images/icon-2.svg" alt="">
+                    <h1 class="my-2 font-semibold">Alignment Specialist</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit unde nulla dolores?</p>
+                </div>
+                <div class="flex flex-col items-center justify-center shadow p-5">
+                    <img src="./images/icon-3.svg" alt="">
+                    <h1 class="my-2 font-semibold">Alignment Specialist</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit unde nulla dolores?</p>
+                </div>
+                <div class="flex flex-col items-center justify-center shadow p-5">
+                    <img src="./images/icon-4.svg" alt="">
+                    <h1 class="my-2 font-semibold">Alignment Specialist</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit unde nulla dolores?</p>
+                </div>
+                <div class="flex flex-col items-center justify-center shadow p-5">
+                    <img src="./images/icon-5.svg" alt="">
+                    <h1 class="my-2 font-semibold">Alignment Specialist</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit unde nulla dolores?</p>
+                </div>
+                <div class="flex flex-col items-center justify-center shadow p-5">
+                    <img src="./images/icon-6.svg" alt="">
+                    <h1 class="my-2 font-semibold">Alignment Specialist</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit unde nulla dolores?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- work section -->
+        <section class="my-16 flex w-full">
+            <div class="mx-auto w-11/12 md:w-4/5">
+                <h1 class="text-center text-2xl font-semibold">WORK PROCESS</h1>
+                <div class="grid gap-5 grid-cols-1 md:grid-cols-3 md:grid-rows-1 text-center mt-12">
+                    <div class="flex flex-col items-center rounded justify-center shadow p-5 bg-teal-400 text-white">
+                        <img src="./images/process-1.png" alt="">
+                        <h1 class="my-4 font-semibold text-xl">Cosmetic Dentistry</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit unde nulla dolores?</p>
+                    </div>
+                    <div class="flex flex-col items-center rounded justify-center shadow p-5 bg-teal-400 text-white">
+                        <img src="./images/process-2.png" alt="">
+                        <h1 class="my-4 font-semibold text-xl">Cosmetic Dentistry</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit unde nulla dolores?</p>
+                    </div>
+                    <div class="flex flex-col items-center rounded justify-center shadow p-5 bg-teal-400 text-white">
+                        <img src="./images/process-3.png" alt="">
+                        <h1 class="my-4 font-semibold text-xl">Cosmetic Dentistry</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit unde nulla dolores?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- reviews section -->
+        <section class="my-16 flex w-full" id="reviews">
+            <div class="mx-auto w-11/12 md:w-4/5">
+                <h1 class="text-center text-2xl font-semibold">SATISFIED CLIENTS</h1>
+                <div class="grid gap-5 grid-cols-1 md:grid-cols-3 md:grid-rows-1 text-center mt-12">
+                    <div class="flex flex-col items-center rounded justify-center shadow p-5 bg-slate-50">
+                        <img src="./images/pic-1.png" class="rounded-full w-16 h-16" alt="">
+                        <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ois repudiandae, dolores amagni quisquam atque, quo maxime, necesus nima? Harum quasi dolorem eaque iste dolorum.</p>
+                        <div class="mb-3 bg-slate-200 py-1 px-2">
+                            <i class="fa-solid fa-star text-teal-400"></i>
+                            <i class="fa-solid fa-star text-teal-400"></i>
+                            <i class="fa-solid fa-star text-teal-400"></i>
+                            <i class="fa-solid fa-star text-teal-400"></i>
+                            <i class="fa-solid fa-star-half-stroke text-teal-400"></i>
+                        </div>
+                        <h1 class="font-semibold text-xl">John Doe</h1>
+                        <p class="text-slate-500">Satisfied Client</p>
+                    </div>
+                    <div class="flex flex-col items-center rounded justify-center shadow p-5">
+                        <img src="./images/pic-2.png" class="rounded-full w-16 h-16" alt="">
+                        <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ois repudiandae, dolores amagni quisquam atque, quo maxime, necesus nima? Harum quasi dolorem eaque iste dolorum.</p>
+                        <div class="mb-3 bg-slate-100 py-1 px-2">
+                            <i class="fa-solid fa-star text-teal-400"></i>
+                            <i class="fa-solid fa-star text-teal-400"></i>
+                            <i class="fa-solid fa-star text-teal-400"></i>
+                            <i class="fa-solid fa-star text-teal-400"></i>
+                            <i class="fa-solid fa-star-half-stroke text-teal-400"></i>
+                        </div>
+                        <h1 class="font-semibold text-xl">John Doe</h1>
+                        <p class="text-slate-500">Satisfied Client</p>
+                    </div>
+                    <div class="flex flex-col items-center rounded justify-center shadow p-5">
+                        <img src="./images/pic-3.png" class="rounded-full w-16 h-16" alt="">
+                        <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ois repudiandae, dolores amagni quisquam atque, quo maxime, necesus nima? Harum quasi dolorem eaque iste dolorum.</p>
+                        <div class="mb-3 bg-slate-100 py-1 px-2">
+                            <i class="fa-solid fa-star text-teal-400"></i>
+                            <i class="fa-solid fa-star text-teal-400"></i>
+                            <i class="fa-solid fa-star text-teal-400"></i>
+                            <i class="fa-solid fa-star text-teal-400"></i>
+                            <i class="fa-solid fa-star-half-stroke text-teal-400"></i>
+                        </div>
+                        <h1 class="font-semibold text-xl">John Doe</h1>
+                        <p class="text-slate-500">Satisfied Client</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- make appointment section -->
+         <section id="appointment" class="my-16 flex w-full">
+            <div class="mx-auto w-11/12 md:w-4/5">
+                <h1 class="text-center text-2xl font-semibold bg-teal-600 p-1 text-white">MAKE APPOINTMENT</h1>
+                <div class="flex items-center justify-center">
+                    <div class="bg-slate-300 p-5 mt-12 ">
+                        <label for="name">Your name:</label>
+                        <br>
+                        <input type="text" id="name" placeholder="Your name" class="mt-1 mb-3 outline-none rounded py-2 px-1 md:px-3 w-60 md:w-96">
+                        <br>
+                        <label for="email">Your email:</label>
+                        <br>
+                        <input type="email" id="email" placeholder="Your email" class="mt-1 mb-3 outline-none rounded py-2 px-1 md:px-3 w-60 md:w-96">
+                        <br>
+                        <label for="number">Your number:</label>
+                        <br>
+                        <input type="number" id="number" placeholder="Your number" class="mt-1 mb-3 outline-none rounded py-2 px-1 md:px-3 w-60 md:w-96">
+                        <br>
+                        <label for="date">Appointment Date:</label>
+                        <br>
+                        <input type="date" id="date" placeholder="Appointment date" class="mt-1 mb-3 outline-none rounded py-2 px-1 md:px-3 w-60 md:w-96">
+                        <br>
+                        <button class="ml-auto py-1 px-2 md:py-2 md:px-3 bg-teal-400 text-white rounded"><a href="#">Make Appointment</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer section -->
+        <footer class="pt-16 pb-5 bg-slate-100 text-center" id="contact">
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-1">
+                <div class="flex flex-col justify-center items-center text-center">
+                    <div class="w-10 h-10 bg-teal-400 flex items-center justify-center rounded-full">
+                        <i class="fa-solid fa-phone text-white"></i>
+                    </div>
+                    <h1 class="my-2 font-bold">Contact Number</h1>
+                    <p>+123-707-3548</p>
+                </div>
+                <div class="flex flex-col justify-center items-center text-center">
+                    <div class="w-10 h-10 bg-teal-400 flex items-center justify-center rounded-full">
+                        <i class="fa-solid fa-location-dot text-white"></i>
+                    </div>
+                    <h1 class="my-2 font-bold">Our Address</h1>
+                    <p>America, United States</p>
+                </div>
+                <div class="flex flex-col justify-center items-center text-center">
+                    <div class="w-10 h-10 bg-teal-400 flex items-center justify-center rounded-full">
+                        <i class="fa-solid fa-clock text-white"></i>
+                    </div>
+                    <h1 class="my-2 font-bold">Opening Hour</h1>
+                    <p>00:07am to 10:00pm</p>
+                </div>
+                <div class="flex flex-col justify-center items-center text-center">
+                    <div class="w-10 h-10 bg-teal-400 flex items-center justify-center rounded-full">
+                        <i class="fa-solid fa-envelope text-white"></i>
+                    </div>
+                    <h1 class="my-2 font-bold">Our Email</h1>
+                    <p>abs@gmail.com</p>
+                </div>
+            </div>
+            <hr class="my-7">
+            <h1 class="text-xl">Created By <span class="text-teal-400">Linn Yee Yee Linn </span> | All Rights Reversed!</h1>
+        </footer>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
